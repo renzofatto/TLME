@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C420B0BA-BEB6-4ECD-82FE-D4B315EDF232}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TLMEGraficos</RootNamespace>
+    <AssemblyName>TLMEGraficos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar\AgregarActor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agregar\AgregarActor.Designer.cs">
+      <DependentUpon>AgregarActor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar\AgregarDirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agregar\AgregarDirector.Designer.cs">
+      <DependentUpon>AgregarDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar\AgregarGenero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agregar\AgregarGenero.Designer.cs">
+      <DependentUpon>AgregarGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar\AgregarPelicula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agregar\AgregarPelicula.Designer.cs">
+      <DependentUpon>AgregarPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar\AgregarReparto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Agregar\AgregarReparto.Designer.cs">
+      <DependentUpon>AgregarReparto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaAvanzada.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusquedaAvanzada.Designer.cs">
+      <DependentUpon>BusquedaAvanzada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarActor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarActor.Designer.cs">
+      <DependentUpon>EliminarActor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarDirector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarDirector.Designer.cs">
+      <DependentUpon>EliminarDirector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarGenero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarGenero.Designer.cs">
+      <DependentUpon>EliminarGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarPelicula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarPelicula.Designer.cs">
+      <DependentUpon>EliminarPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eliminar\EliminarReparto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Eliminar\EliminarReparto.Designer.cs">
+      <DependentUpon>EliminarReparto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarSesion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IniciarSesion.Designer.cs">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarPelicula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MostrarPelicula.Designer.cs">
+      <DependentUpon>MostrarPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeliculasVistas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PeliculasVistas.Designer.cs">
+      <DependentUpon>PeliculasVistas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrarPerfil.Designer.cs">
+      <DependentUpon>RegistrarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrarse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Registrarse.Designer.cs">
+      <DependentUpon>Registrarse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarUsuario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeleccionarUsuario.Designer.cs">
+      <DependentUpon>SeleccionarUsuario.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Agregar\AgregarActor.resx">
+      <DependentUpon>AgregarActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar\AgregarDirector.resx">
+      <DependentUpon>AgregarDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar\AgregarGenero.resx">
+      <DependentUpon>AgregarGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar\AgregarPelicula.resx">
+      <DependentUpon>AgregarPelicula.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar\AgregarReparto.resx">
+      <DependentUpon>AgregarReparto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaAvanzada.resx">
+      <DependentUpon>BusquedaAvanzada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarActor.resx">
+      <DependentUpon>EliminarActor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarDirector.resx">
+      <DependentUpon>EliminarDirector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarGenero.resx">
+      <DependentUpon>EliminarGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarPelicula.resx">
+      <DependentUpon>EliminarPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eliminar\EliminarReparto.resx">
+      <DependentUpon>EliminarReparto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarSesion.resx">
+      <DependentUpon>IniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarPelicula.resx">
+      <DependentUpon>MostrarPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeliculasVistas.resx">
+      <DependentUpon>PeliculasVistas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistrarPerfil.resx">
+      <DependentUpon>RegistrarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrarse.resx">
+      <DependentUpon>Registrarse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarUsuario.resx">
+      <DependentUpon>SeleccionarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{BA2BAEB0-714E-480F-BE2E-A53A69F2CEA6}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.csproj">
+      <Project>{42167919-346F-42BC-BA31-346472094D69}</Project>
+      <Name>LogicaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RepositorioEnMemoria\RepositorioEnMemoria.csproj">
+      <Project>{91A40F0D-8878-4179-A779-C8FABBC54FDC}</Project>
+      <Name>RepositorioEnMemoria</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
